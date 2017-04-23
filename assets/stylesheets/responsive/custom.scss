@@ -401,6 +401,9 @@ a.link_button_green_large {
 // ==================
 
 #logged_in_bar {
+  left: 20% !important;
+  top: 0 !important;
+
   a {
     @extend %menu-item;
     @extend %sub-menu-item;
