@@ -28,11 +28,30 @@ Rails.configuration.to_prepare do
     end
   end
 
-  # OutgoingMessage.class_eval do
-  #   # Add intro paragraph to new request template
-  #   def default_letter
-  #     return nil if self.message_type == 'followup'
-  #     #"If you uncomment this line, this text will appear as default text in every message"
-  #   end
-  # end
+  OutgoingMessage.class_eval do
+    # Add intro paragraph to new request template
+    def default_letter
+      return nil if self.message_type == 'followup'
+
+      <<-TEXT
+Io sottoscritto _______
+nato/a a ____________
+il ________________
+residente a ______________________
+in Via __________________________________________________________________
+
+CHIEDO
+
+Ai sensi dell’art. 5, comma 2 del D.Lgs n. 33/2013, l’accesso e l’invio di
+copia elettronica dei seguenti documenti, dati o informazioni
+
+* ____
+
+Ai sensi dell’art. 18-bis, comma 1 della Legge n. 241/1990 si resta in attesa
+del rilascio immediato della ricevuta che attesti l’avvenuta presentazione
+dell’istanza completa di tutti i contenuti previsti dalla predetta
+disposizione.
+      TEXT
+    end
+  end
 end
