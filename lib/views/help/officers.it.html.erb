@@ -9,7 +9,7 @@
 
 <dt id="top">Lavoro per un'amministrazione e sono arrivato/a qui dal link contenuto in una richiesta di accesso. Che succede? <a href="#top">#</a> </dt>
 
-<dd><p><%= site_name %> è un servizio gestito da una ONG. Aiutiamo i cittadini a fare richieste di accesso e a spedirle alle amministrazioni, oltre a tenere traccia delle risposte e a creare un archivio pubblico. </p>
+  <dd><p><%= site_name %> è un servizio gestito da <a href="https://blog.dirittodisapere.it/chi-siamo/">Diritto Di Sapere</a>, un'organizzazione senza scopo di lucro che si occupa di promuovere il diritto di accesso alle informazioni. Aiutiamo i cittadini a fare richieste di accesso e a spedirle alle amministrazioni, oltre a tenere traccia delle risposte e a creare un archivio pubblico. </p>
 
 <p>La richiesta di accesso che hai ricevuto è stata fatta da un utente di <%= site_name %>. Puoi semplicemente rispondere come a una qualunque altra richiesta di accesso.
 L'unica differenza è che la tua risposta verrà pubblicata automaticamente sul sito.
@@ -32,14 +32,14 @@ Speriamo anche che questo eliminerà i duplicati, riducendo la mole di lavoro pe
 
 <dt id="realpeople">Ma chi fa le richieste... sono persone vere? <a href="#realpeople">#</a> </dt>
 
-<dd>Certo! Per poter tenere traccia delle risposte, il sistema genera un indirizzo unico per ogni richiesta. 
-Ad ogni modo ogni utente deve prima registrarsi con nome e email che provvediamo a verificare. 
+<dd>Certo! Per poter tenere traccia delle risposte, il sistema genera un indirizzo unico per ogni richiesta.
+Inoltre, come previsto dalle <a href="http://www.anticorruzione.it/portal/public/classic/AttivitaAutorita/AttiDellAutorita/_Atto?ca=6666">Linee Guida ANAC</a>), agli utenti è richiesto di identificarsi allegando alla richiesta una copia della propria carta di identità.
 Sul sito puoi trovare tutte le richieste fatte dai singoli utenti.
 </dd>
 
 <dt id="vexatious">Ma non starete mandando troppe richieste? <a href="#vexatious">#</a> </dt>
 
-<dd><p><%= site_name %> non sta inviando un gran numero di richieste. Quelle che vengono spedite sono inviate per conto dei cittadini che le fanno.
+<dd><p><%= site_name %> non sta inviando un gran numero di richieste. Quelle che vengono spedite sono inviate per conto degli utenti che le fanno.
 Inoltre, dato che tutte le richieste vengono pubblicate, è più semplice rendersi conto se qualcuno sta mandando un gran numero di richieste senza fondamento.</p>
 </dd>
 
@@ -49,8 +49,8 @@ Inoltre, dato che tutte le richieste vengono pubblicate, è più semplice render
 Eventuali messaggi di errore verranno mostrati sul sito. Puoi controllare l'indirizzo sulla pagina relativa all'amministrazione per cui lavori. 
 <a href="/help/contact">Contattaci</a> per segnalarci eventuali modifiche dell'indirizzo.</p>
 <p>A volte le richieste non vengono ricevute per via dei filtri spam delle caselle di posta. 
-Contattate i tecnici del vostro ufficio affinché mettano in "whitelist" i messaggi provenienti da <strong>@<%= AlaveteliConfiguration::incoming_email_domain %></strong>.
-Se ce lo <a href="/help/contact">segnali</a> rispediremo le richieste e ti daremo ulteriori informazioni sulla spedizione, in modo da capire cosa è successo.
+Contatta i tecnici del tuo ufficio affinché mettano in "whitelist" i messaggi provenienti da <strong>@<%= AlaveteliConfiguration::incoming_email_domain %></strong>.
+Se ce lo <a href="/help/contact">segnali</a> rispediremo le richieste e ti daremo ulteriori informazioni sull'invio, in modo da capire cosa è successo.
 </p>
 <p>Infine: puoi rispondere a tutte le richieste via web senza email, usando il tasto "Rispondi alla richiesta" che si trova alla fine di ogni pagina con una richiesta. 
 </dd>
@@ -58,7 +58,7 @@ Se ce lo <a href="/help/contact">segnali</a> rispediremo le richieste e ti darem
 <dt id="days">Come sono calcolate le scadenze che sono sulle varie pagine?<a href="#days">#</a> </dt>
 
 <dd>
-<p>La legge sull'accesso n.241/90 stabilisce che la risposta debba arrivare entro 30 giorni solari dalla richiesta</p>
+<p>Il D.lgs 33/2013 stabilisce che la risposta debba arrivare entro "trenta giorni dalla presentazione dell’istanza"</p>
 
 <p>Se ci sono motivazioni per cui la risposta può richiedere una quantità maggiore di tempo, sarebbe utile spedire una breve email segnalandolo e spiegandone le motivazioni.
 </p>
@@ -77,7 +77,7 @@ Per farlo vai alla fine della pagina e clicca su "rispondi alla richiesta".
 
 <dt id="names">Perché pubblicate le email e i nomi di chi risponde? <a href="#names">#</a> </dt>
 
-<dd>Consideriamo il clavoro degli impiegati nella pubblica amministrazione come informazione pubblica. 
+<dd>Consideriamo il lavoro degli impiegati nella pubblica amministrazione come informazione pubblica. 
 In casi eccezionali, tuttavia, elimineremo alcune informazioni qualora fosse necessario. Leggi la nostra <a href="/help/privacy#takedown">policy</a> a questo riguardo.
 </dd>
 
@@ -86,15 +86,14 @@ In casi eccezionali, tuttavia, elimineremo alcune informazioni qualora fosse nec
 <dd><p>Per prevenire lo spam rimuoviamo automaticamente email e numeri di telefono. <a href="/help/contact">Segnalaci</a> se qualcuno fosse sfuggito.
 Per ragioni tecniche non sempre li rimuoviamo dagli allegati, specie dai file in formato .pdf</p>
 <p>Se hai bisogno di visualizzare un indirizzo email che è stato rimosso, <a
-  href="/help/contact">scrivivi</a>. A volte un indirizzo email può essere importante ai fini della risposta: in quel caso lo pubblicheremo in un formato speciale sotto forma di annotazione alla risposta.
+  href="/help/contact">scrivici</a>. A volte un indirizzo email può essere importante ai fini della risposta: in quel caso lo pubblicheremo in un formato speciale sotto forma di annotazione alla risposta.
 </dd>
 
 <dt id="copyright"><a name="commercial"></a>E allora il copyright?<a href="#copyright">#</a> </dt>
 
-<dd>Le nostre richieste di accesso sono progettate pensando che chiunque può chiedere le stesse informazioni.
+<dd>Il diritto di accesso generalizzato prevede che chiunque possa chiedere le stesse informazioni e riutilizzarle.
 
 Se pensi che pubblicare alcuni documenti crei problemi di copyright, <a href="/help/contact">contattaci</a> e segnalacelo.
-A ogni modo, non consigliamo di farlo.
 </dd>
 
 </dl>
