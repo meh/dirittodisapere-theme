@@ -9,7 +9,7 @@
 # Liz Conlan <liz@mysociety.org>, 2017
 # louisecrow <louise@mysociety.org>, 2015
 # Marco Giustini <info@marcogiustini.info>, 2013
-msgid ""
+msgid 
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
@@ -30,13 +30,13 @@ msgid "(show)"
 msgstr "(mostra)"
 
 msgid "<a href=\"{{url}}\">Thinking of using a pseudonym?</a>"
-msgstr "<a href=\"{{url}}\">Stai pensando di usare uno pseudonimo?</a>"
+msgstr "<a href=\"{{url}}\">No, non puoi usare uno pseudonimo...</a>"
 
 msgid "<strong>Note:</strong> Because we're testing, requests are being sent to {{email}} rather than to the actual authority."
-msgstr "<strong>Nota bene:</strong> Questo è un test, le richieste sono inviate a {{email}} e non alla pubblica amministrazione."
+msgstr "<strong>Nota bene:</strong> questo è un test, perciò le richieste ssaranno inviate a {{email}} e non alla pubblica amministrazione."
 
 msgid "A one line summary of the information you are requesting, e.g."
-msgstr "L'oggetto della richiesta che vuoi mandare, ad esempio"
+msgstr "Indica soltanto l'oggetto della tua richiesta, ad esempio"
 
 msgid "A project by"
 msgstr "Un progetto di"
@@ -57,7 +57,7 @@ msgid "Browse <a href='{{url}}'>other requests</a> for examples of how to word y
 msgstr "Guarda i testi di <a href='{{url}}'>altre richieste</a> per usarle come modello. "
 
 msgid "Browse <a href='{{url}}'>other requests</a> to '{{public_body_name}}' for examples of how to word your request."
-msgstr "Guarda i testi di <a href='{{url}}'>altre richieste</a> inviate a '{{public_body_name}}' per usarle come modello."
+msgstr "Guarda i testi di <a href='{{url}}'>altre richieste</a> inviate a '{{public_body_name}}' e usale come modello."
 
 msgid "Browse requests"
 msgstr "Guarda richieste"
@@ -117,7 +117,7 @@ msgid "Please only request information that comes under those categories, <stron
 msgstr "Per favore richiedi soltanto informazioni che rientrano in queste categorie, <strong>non perdere tempo</strong> e non far perdere tempo alla pubblica amministrazione richiedendo altre informazioni."
 
 msgid "Preview your public request"
-msgstr "Guarda l'anteprima della tua richiesta pubblica"
+msgstr "Guarda l'anteprima della tua richiesta"
 
 msgid "Remember: your request and any response will be published on the site!"
 msgstr "Ricorda: la tua richiesta e l'eventuale risposta saranno pubblicate sul sito!"
@@ -138,13 +138,13 @@ msgid "Theme licensed under CC BY SA 3.0<br/>Creative Commons Attribution Share-
 msgstr "Tema rilasciato sotto licenza Creative Commons<br/>Attribution Share-Alike CC BY SA 3.0"
 
 msgid "Think of a question for a public authority."
-msgstr "Scrivi una richiesta di accesso"
+msgstr "Scrivi una richiesta di accesso generalizzato (FOIA)"
 
 msgid "This covers a very wide spectrum of information about the state of the <strong>natural and built environment</strong>, such as:"
 msgstr "Ciò rientra in un vasto spettro di informazioni sullo stato<strong>dell'ambiente naturale e di quello edificato</strong>, come ad esempio:"
 
 msgid "To get information from public authorities:"
-msgstr "Per ottenere informazioni e documenti dalle pubbliche amministrazioni:"
+msgstr "Per ottenere dati e documenti dalle pubbliche amministrazioni:"
 
 msgid "To:"
 msgstr "A:"
@@ -153,13 +153,13 @@ msgid "View authorities"
 msgstr "Elenco amministrazioni"
 
 msgid "We send the question for you"
-msgstr "Noi inviamo la richiesta alla pubblica amministrazione"
+msgstr "Noi la inviamo"
 
 msgid "We'll notify you when there is an answer."
 msgstr "Ti avvertiamo quando c'è una risposta"
 
 msgid "Will they answer?"
-msgstr "Mi risponderanno?"
+msgstr "Come funziona?"
 
 msgid "You already created the same batch of requests on {{date}}. You can either view the <a href=\"{{existing_batch}}\">existing batch</a>, or edit the details below to make a new but similar batch of requests."
 msgstr "Hai già greato lo stesso gruppo di richieste in data {{date}}. Puoi guardare <a href=\"{{existing_batch}}\">il gruppo di richieste già creato</a>, o modificare i dettagli qui sotto per creare un gruppo di richieste simili ma nuove."
