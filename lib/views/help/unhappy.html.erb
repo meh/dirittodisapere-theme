@@ -1,34 +1,32 @@
-<% @title = "Non sei soddisfatto della risposta ricevuta?" %>
+<% @title = "Qualcosa è andato storto?" %>
 
 
 <% if !@info_request.nil? %>
-<h1>Se non sei soddisfatto della risposta ricevuta '<%=request_link(@info_request) %>'?
+<h1>Non sei soddisfatto di come è andata la tua richiesta '<%=request_link(@info_request) %>' ?
 </h1>
 <% else %>
-<h1>Non sei soddisfatto della risposta ricevuta?</h1>
-<% end %>
 
 <p>Se ...</p>
 
 <ul>
-<li>Non hai ricevuto risposta entro 30 giorni (solari)</li>
-<li>Non hai ricevuto tutte le informazioni che avevi chiesto <strong>o</strong></li>
-<li>La tua richiesta è stata rifiutata ma senza motivazioni adeguate alla normativa</li>
+<li>non hai ricevuto risposta nonostante siano passati entro 30 giorni (solari)</li>
+<li>non hai ricevuto tutte le informazioni che avevi chiesto <strong>o</strong></li>
+<li>la tua richiesta è stata rifiutata ma utilizzando motivazioni che non rientrano tra le eccezioni previste da decreto trasparenza</li>
 </ul>
 
 <p>... a questo punto puoi</p>
 
 <ol>
-<li>Chiedere all'amministrazione <strong>una revisione interna</strong>.</li>
-<li>Contattare <strong>il Difensore Civico o la Commissione per l'Accesso</strong>.</li>
-<li>A ogni modo prova a cercare le informazioni <strong>anche in altro modo</strong>.</li>
+<li>Chiedere <strong>un riesame interno</strong> al Responsabile Trasparenza</li>
+<li>Contattare <strong>il Difensore Civico</strong> se la tua richiesta è indirizzata a un ente locale o ricorrere al TAR</li>
+<li>Provare a cercare le informazioni <strong>in altro modo</strong></li>
 </ol>
 
-<h1 id="internal_review">1. Chiedere una revisione interna <a class="hover_a" href="#internal_review">#</a> </h1>
+<h1 id="internal_review">1. Chiedi un riesame interno <a class="hover_a" href="#internal_review">#</a> </h1>
 
 <p>
 <% if @info_request %>
-    <%= link_to "Request an internal review", new_request_followup_path(:request_id => @info_request.id) + "?internal_review=1#followup", :class => 'link_button_green request-internal-review-action' %> and then write a message asking the authority to review your request.
+    <%= link_to "Richiedi un riesame interno", new_request_followup_path(:request_id => @info_request.id) + "?internal_review=1#followup", :class => 'link_button_green request-internal-review-action' %> and then write a message asking the authority to review your request.
 <% else %>
     Alla fine della pagina in questione su <%= site_name %> scegli 
     "Richiedi revisione interna" e scrivi un messaggio di richiesta. 
@@ -36,37 +34,37 @@
 <% end %>
 </p>
 
-<h1 id="complaining">2. Contattare il Difensore Civico o la Commissione per l'Accesso <a class="hover_a" href="#complaining">#</a> </h1>
+<h1 id="complaining">2. Contatta il Difensore Civico o fai ricorso al TAR <a class="hover_a" href="#complaining">#</a> </h1>
 
-<p>Se non sei soddisfatto, contatta il Difensore Civico regionale o la <a href="http://www.commissioneaccesso.it/">Commmissione per l'Accesso</a>.
+<p>Se il riesame interno non funziona e hai inviato la tua richiesta a un ente locale puoi contattare il Difensore Civico regionale.
 </p>
 
-<p>Per facilitare l'invio delle informazioni rilevanti
+<p>Per facilitare l'invio delle informazioni rilevanti nel tuo ricorso
 <% if !@info_request.nil? %>
     includi il link alla tua richiesta
     <strong><%=h request_url(@info_request) %></strong>
 <% else %>
     includi il link alla tua richiesta su <%= site_name %>
 <% end %>
-nel tuo ricorso o stampa la pagina della tua richiesta e i relativi allegati.
+o allega una copia della tua richiesta e i relativi allegati.
 </p>
 
-<p><%= site_name %> non ha particolari facilitazioni per la gestione della richiesta, poiché sono i rispettivi uffici a gestire ed effettuare le comunicazioni. 
-Scrivi gli aggiornamenti nelle annotazioni.</p>
+<p><%= site_name %> non supporta al momento l'invio di ricorsi al Difensore Civico: se scegli di percorrere questa strada scrivici e raccontaci come va aggiungendo un'annotazione alla tua richiesta.</p>
+<p>Infine, puoi sempre ricorrere alla giustizia amministrativa: spesso è un percorso lungo e costo ma a volte è anche l'unica soluzione. Se decidi di presentare un ricorso al TAR, scrivici e proveremo a darti una mano.
+</p>
 
-<h1 id="other_means">3. Trovare le informazioni seguendo altre strade <a class="hover_a" href="#other_means">#</a> </h1>
+<h1 id="other_means">3. Trova le informazioni seguendo altre strade <a class="hover_a" href="#other_means">#</a> </h1>
 
-<p>Puoi cercare di risolvere la tua richiesta in altri modi o usando altre strade
+<p>Puoi provare a ottenere ciò che stai cercando seguendo altre strade
 
 <ul>
-<li>Invia una <strong>nuova richiesta di accesso</strong> per chiedere documenti più generali o indirettamente collegati alla tua richiesta.
-<a href="<%= help_contact_path %>">Chiedici consiglio</a> se non sai cosa fare.</li>
+<li>Invia una <strong>nuova richiesta di accesso</strong> per chiedere documenti più generali o indirettamente collegati alla tua richiesta.</li>
 <li>Se <strong>altre amministrazioni</strong> o aziende partecipate sono coinvolte, invia la richiesta a loro.</li>
-<li>Scrivi <strong>a un parlamentare locale o che senti ti possa rappresentare</strong> e prova a chiedere il suo aiuto. 
-I membri del Parlamento possono scrivere direttamente a Ministeri e dipartimenti e fare interrogazioni parlamentari.</li>
-<li>Chiedi <strong>a ricercatori e giornalisti</strong> interessati a temi analoghi a quello che ti sta a cuore.  
-Qualcuno di loro talvolta fa ricerche usando questo sito; contatta gli utenti registrati.
+<li>Scrivi <strong>a un parlamentare o a un rappresentante locale di cui ti fidi</strong> e prova a chiedere il suo aiuto: potrebbe ad esempio scrivere direttamente alla pubblica amministrazione e fare interrogazioni.</li>
+<li>Chiedi <strong>a ricercatori e giornalisti</strong> interessati a temi analoghi. Qualcuno di loro talvolta potrebbe aver avuto più successo.</li>
+<li><a href="<%= help_contact_path %>">Chiedici consiglio</a> se non sai cosa fare.</li>
 </ul>
+
 
 
 
