@@ -9,7 +9,7 @@
 # Liz Conlan <liz@mysociety.org>, 2017
 # louisecrow <louise@mysociety.org>, 2015
 # Marco Giustini <info@marcogiustini.info>, 2013
-msgid 
+msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
